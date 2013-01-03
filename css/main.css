@@ -112,7 +112,8 @@ img {
 	}
 p {
 	margin:1em 0;
-	background: rgba(0,0,0,0.1);
+	color: white;
+	background: rgba(0,0,0,0.8);
 	padding: 10px;
 	-webkit-border-radius: 10px;
 		 -moz-border-radius: 10px;
