@@ -15,6 +15,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
 		<script>!window.jQuery && document.write('<script src="/js/jquery-1.6.1.min.js"><\/script>')</script>
 		<script src="js/parallax.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 
 	<body>
@@ -26,6 +27,7 @@
 			</header>
 			
 			<nav id="primary">
+				<img src="img/menu.png" alt="">
 				<ul>
 					<li>
 						<h1>Bienvenidos</h1>
@@ -97,18 +99,30 @@
 			<!-- Parallax foreground -->
 			<div id="parallax-bg3">
 				<img id="bg3-1" src="img/logo.png" width="529" height="757" alt="Montgolfier hot air balloon"/>
+				
 				<div id="bg3-2">
-					<a href="http://goo.gl/maps/SG9XD" target="_blank"><img src="img/mapa-a.png" alt="mapa-a" /></a>
+					<a title="Ver Mapa" id="mapa" onClick="openbox('Mapa', 1)"><img src="img/mapa-a.png" alt="mapa-a" /></a>
+					<img src="img/mapa-b.png" alt="mapa-b">
+				</div>
 
-					<img src="img/mapa-b.png" alt="mapa-b"></div>
-				<img id="bg3-3" src="img/balloon3.png" width="446" height="713" alt="Blanchard's air balloon"/>
+				<div id="bg3-3">
+					<ul>
+						<li><img src="http://placehold.it/250x150"></li>
+						<li><img src="http://placehold.it/250x150"></li>
+						<li><img src="http://placehold.it/250x150"></li>
+					</ul>
+					<ul>
+						<li><img src="http://placehold.it/250x150"></li>
+						<li><img src="http://placehold.it/250x150"></li>
+						<li><img src="http://placehold.it/250x150"></li>
+					</ul>
+				</div>
+
 				<img id="bg3-4" src="img/ground.png" width="1104" height="684" alt="Landscape with trees and cows"/>
 			</div>
 			
 			<!-- Parallax  midground clouds -->
-			<div id="parallax-bg2">
-				<img id="bg2-1" src="img/cloud-lg1.png" alt="cloud"/>
-				<img id="bg2-2" src="img/cloud-lg1.png" alt="cloud"/>
+			<div id="parallax-bg2"> 
 				<img id="bg2-3" src="img/cloud-lg1.png" alt="cloud"/>
 				<img id="bg2-4" src="img/cloud-lg1.png" alt="cloud"/>
 				<img id="bg2-5" src="img/cloud-lg1.png" alt="cloud"/>
@@ -122,6 +136,14 @@
 				<img id="bg1-4" src="img/cloud-lg2.png" alt="cloud"/>
 			</div>
 		
+		</div>
+
+		<div id="shadowing"></div>
+		<div id="box">
+		  <span id="boxtitle"></span>
+		  <iframe width="620" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msid=202281234127100889145.0004d1cf9df5e3cc14274&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;z=15&amp;ll=9.934678,-84.193478&amp;&amp;output=embed"></iframe><br />
+		  <small>Ver <a href="https://maps.google.com/maps/ms?msid=202281234127100889145.0004d1cf9df5e3cc14274&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=9.924678,-84.185478&amp;spn=0.020291,0.027466&amp;z=15&amp;source=embed" >Festival Downhill Santa Ana 2013 </a> en un mapa más grande</small>
+		      <input type="button" name="cancel" value="Cerrar" onClick="closebox()">
 		</div>
 	
 	</body>

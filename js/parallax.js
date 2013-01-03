@@ -69,6 +69,7 @@ function redrawDotNav(){
 	var section2Top =  $('#frameless-parachute').offset().top - (($('#english-channel').offset().top - $('#frameless-parachute').offset().top) / 2);
 	var section3Top =  $('#english-channel').offset().top - (($('#about').offset().top - $('#english-channel').offset().top) / 2);
 	var section4Top =  $('#about').offset().top - (($(document).height() - $('#about').offset().top) / 2);;
+
 	$('nav#primary a').removeClass('active');
 	if($(document).scrollTop() >= section1Top && $(document).scrollTop() < section2Top){
 		$('nav#primary a.manned-flight').addClass('active');
@@ -76,7 +77,7 @@ function redrawDotNav(){
 		$('nav#primary a.frameless-parachute').addClass('active');
 	} else if ($(document).scrollTop() >= section3Top && $(document).scrollTop() < section4Top){
 		$('nav#primary a.english-channel').addClass('active');
-	} else if ($(document).scrollTop() >= section4Top){
+	}else if ($(document).scrollTop() >= section4Top){
 		$('nav#primary a.about').addClass('active');
 	}
 	
