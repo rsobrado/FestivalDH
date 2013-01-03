@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'kimberley_blregular';
+    src: url('../fonts/kimberley_bl-webfont.eot');
+    src: url('../fonts/kimberley_bl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kimberley_bl-webfont.woff') format('woff'),
+         url('../fonts/kimberley_bl-webfont.ttf') format('truetype'),
+         url('../fonts/kimberley_bl-webfont.svg#kimberley_blregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 /* PARALLAX SCROLLING EXPERIMENT
    Master Styles
    Author: Jonathan Nicol (f6design.com)
@@ -35,6 +48,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+
 }
 ol, ul {
 	list-style: none;
@@ -66,15 +80,14 @@ body {
 	color: #000;
 	font-size: 14px;
 	font-family: Arial;
+
+	background: #e4e4e4 url('../img/background-stained.jpg') 50% 50% fixed no-repeat;
 }
 h1 {
 	color: #9ebd2e;
-	text-shadow: -2px 1px 3px rgba(0,0,0,0.9);
-	font-family: Impact;
-}
-p{
-	background: rgba(0,0,0,0.2);
-	padding: 10px;
+	text-shadow: -1px 1px rgba(0,0,0,0.40);
+	font-family: 'kimberley_blregular';
+
 }
 a, a:link,
 a:active,
@@ -95,6 +108,11 @@ img {
 	}
 p {
 	margin:1em 0;
+	background: rgba(0,0,0,0.1);
+	padding: 10px;
+	-webkit-border-radius: 10px;
+		 -moz-border-radius: 10px;
+					border-radius: 10px;
 	}
 
 /* Common shared styles
@@ -153,13 +171,15 @@ nav#primary a:hover, nav#primary a.active {
 }
 nav#primary h1 {
 	position: absolute;
-	right: 22px;
+	right: 24px;
 	top: -7px;
 	display: none;
 	padding: 4px 20px 4px 7px;;
 	color: #fff;
 	white-space: nowrap;
 	background: transparent url('../img/nav-arrow.png') 100% 50% no-repeat;
+	font-family: 'kimberley_blregular';
+	letter-spacing: 1px;
 	}
 nav.next-prev {
 	margin: 20px 0 0 0;
@@ -221,7 +241,7 @@ nav.next-prev {
 			}
 			#content h1 {
 				margin: 0 0 25px 0;
-				font-size: 60px;
+				font-size: 50px;
 				font-weight: normal;
 				line-height: 65px;
 				}
@@ -255,7 +275,7 @@ nav.next-prev {
 		}
 	#bg3-3 {
 		position: absolute;
-		top: 1628px;
+		top: 1850px;
 		left: 403px;
 		}
 	#bg3-4 {
@@ -334,4 +354,3 @@ nav.next-prev {
 		top: 1020px;
 		left: 450px;
 		}
-
