@@ -241,7 +241,8 @@ nav.next-prev {
 			}
 		#frameless-parachute {
 			position: absolute;
-			top: 1090px;
+			top: 1070px;
+			left: 640px;
 			}
 		#english-channel {
 			position: absolute;
@@ -256,6 +257,7 @@ nav.next-prev {
 		#about {
 			position: absolute;
 			top: 3270px;
+			left: 600px;
 			}
 		#salir {
 			position: absolute;
@@ -283,7 +285,6 @@ nav.next-prev {
 	#bg3-2 {
 		position: absolute;
 		top: 900px;
-		left: 321px;
 		}
 	#bg3-3 {
 		position: absolute;
