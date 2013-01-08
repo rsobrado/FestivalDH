@@ -156,8 +156,8 @@ hr {
 nav#primary {
 	z-index: 5;
 	position: fixed;
-	top: 50%;
-	right: 16px;
+	top: 40%;
+	right: 30px;
 	margin-top: -40px;
 }
 nav#primary li {
