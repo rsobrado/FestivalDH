@@ -11,17 +11,6 @@
 
 }
 
-
-/* PARALLAX SCROLLING EXPERIMENT
-   Master Styles
-   Author: Jonathan Nicol (f6design.com)
-*****************************************************************/
-
-
-/* Global reset
-   http://meyerweb.com/eric/tools/css/reset/ 
-*****************************************************************/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,7 +31,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -66,7 +55,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+label{
+	font-family: Arial;
+	color: white; 
 
+}
 /* Extended base styles (site specific)
 *****************************************************************/
 
@@ -76,7 +69,7 @@ html {
 body {
 	background: #f2f2f2;
 	overflow-x: hidden;
-	height: 4350px;
+	height: 4000px;
 	line-height: 1.5;
 	color: #000;
 	font-size: 14px;
@@ -131,6 +124,25 @@ hr {
 	height: 3px;
 }
 
+.close{
+	background: red;
+	border: 2px solid white;
+	text-shadow: -1px 1px rgba(0,0,0,0.10);
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+	padding: 5px 5px;
+	text-shadow: -1px 1px rgba(0,0,0,0.40);
+	-webkit-box-shadow: -1px 1px rgba(0, 0, 0, 0.6);
+		 -moz-box-shadow: -1px 1px rgba(0, 0, 0, 0.6);
+		 			box-shadow: -1px 1px rgba(0, 0, 0, 0.6);
+
+	-webkit-border-radius: 5px;
+		 -moz-border-radius: 5px;
+					border-radius: 5px;
+}
+
 /* Page structure
 *****************************************************************/
 
@@ -141,7 +153,8 @@ hr {
 	width: 100%;
 	background: #000;
 	}
-	#branding h1 {
+	#branding .holder {
+	color: #9ebd2e;
 		width: 940px;
 		padding: 10px 15px;
 		margin: 0 auto;
@@ -230,22 +243,22 @@ nav.next-prev {
 	#content article {
 		width: 300px;
 		}
-		#manned-flight ,
-		#frameless-parachute,
-		#english-channel,
+		#welcome ,
+		#track,
+		#sponsors,
 		#about {
 			padding-top: 105px;
 			}
-		#manned-flight {
+		#welcome {
 			position: absolute;
-			top: 0px;
+			top: 30px;
 			}
-		#frameless-parachute {
+		#track {
 			position: absolute;
 			top: 1070px;
 			left: 640px;
 			}
-		#english-channel {
+		#sponsors {
 			position: absolute;
 			top: 2180px;
 			}
@@ -260,9 +273,10 @@ nav.next-prev {
 			top: 3270px;
 			left: 600px;
 			}
-		#salir {
+		#footer {
 			position: absolute;
-			top: 4470px;
+			top: 3920px;
+			left: 200px;
 			}
 /* foreground (ballons/landscape) */
 #parallax-bg3 {
@@ -280,8 +294,9 @@ nav.next-prev {
 	/* balloon */
 	#bg3-1 {
 		position: absolute;
-		top: -111px;
+		top: 200px;
 		left: 355px;
+		z-index: -20;
 		}
 	#bg3-2 {
 		position: absolute;
@@ -300,14 +315,29 @@ nav.next-prev {
 		}
 	#bg3-4 {
 		position: absolute;
-		top: 2700px;
+		top: 2450px;
 		left: -85px;
 		}
-	#bg3-5 {
+	#form {
 		position: absolute;
-		top: 3400px;
-		left: 285px;
-		}
+		top: 2600px;
+		left: -75px;
+		height: 480px;
+		overflow: hidden;
+
+		margin:1em 0;
+		color: white !important;
+		font-family: Arial !important;
+
+		background: rgba(0,0,0,0.8);
+		padding: 10px;
+		-webkit-border-radius: 10px;
+			 -moz-border-radius: 10px;
+						border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.6);
+		 -moz-box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.6);
+		 			box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.6);
+	}
 /* midground (clouds) */
 #parallax-bg2 {
 	z-index: 2;
