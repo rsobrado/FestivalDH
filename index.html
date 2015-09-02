@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+
+<html xmlns:fb="http://ogp.me/ns/fb#">
+	
+	<head>
+		<title>Festival Downhill Santa Ana 2013</title>
+
+		<meta charset="utf-8" />
+		<meta name="description" content="A parallax scrolling experiment using jQuery" />
+
+
+		<link rel="stylesheet" media="all" href="css/main.css" />
+
+		<script src="js/modernizr.custom.37797.js"></script> 
+		<!-- Grab Google CDN's jQuery. fall back to local if necessary --> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
+		<script>!window.jQuery && document.write('<script src="/js/jquery-1.6.1.min.js"><\/script>')</script>
+		<script src="js/parallax.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+
+	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=195204853952108";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<div id="wrapper">
+			
+			<header id="branding">
+				
+				<div class="holder">
+					<span>Festival Downhill Santa Ana 2013</span> <div class="fb-like" data-href="http://intrack.tv" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false"></div>
+				</div>
+			</header>
+			
+			<nav id="primary">
+				<img src="img/menu.png" alt="">
+				<ul>
+					<li>
+						<h1>Bienvenidos</h1>
+						<a class="welcome" href="#welcome">View</a>
+					</li>
+					<li>
+						<h1>La pista</h1>
+						<a class="track" href="#track">View</a>
+					</li>
+					<li>
+						<h1>Patrocinadores</h1>
+						<a class="sponsors" href="#sponsors">View</a>
+					</li>
+					<li>
+						<h1>Inscripci&#243;n</h1>
+						<a class="about" href="#about">View</a>
+					</li>
+				</ul>
+
+			</nav>
+			
+			<div id="content">
+				<article id="welcome">
+					<header>
+						<h1>16 y 17 de Febrero</h1>
+					</header>
+					<p>
+						<b>¡Bienvenidos al primer festival de longboard en Costa Rica!</b><br><br>
+						El festival se llevar&#225; a cabo en el cant&#243;n de Santa Ana, San Jos&#233; en una carretera totalmente cerrada y con todas las facilidades necesarias. Donde tendremos las clasificatoria el d&#237;a s&#225;bado 16 y las competencias el d&#237;a domingo 17.<br><br>
+						¡No se pierda este evento lleno de velocidad y adrenalina!
+
+					</p>
+					<nav class="next-prev">
+						<hr />
+						<a class="next track" href="#track">Next</a>
+					</nav>
+				</article>
+				
+				<article id="track">
+					<header>
+						<h1>La pista</h1>
+					</header>
+					<p>Ser&#225; un trayecto de aproximadamente 1400mts que cuenta con una gran recta de al menos 1 km luego de una curva cerrada a la derecha. La meta ser&#225; en las instalaciones deportivas y culturales de la Municipalidad de Santa Ana. Haz Click en el &#237;cono para ampliar el mapa.</p>
+					<nav class="next-prev">
+						<a class="prev welcome" href="#welcome">Prev</a>
+						<hr />
+						<a class="next sponsors" href="#sponsors">Next</a>
+					</nav>
+				</article>
+				
+				<article id="sponsors">
+					<header>
+						<h1>Patrocinadores</h1>
+					</header>
+					<p>Este evento se realiza gracias a los siguientes patrocinadores. Haz click en cada logo para conocer m&#225;s sobre las marcas.</p>
+					<nav class="next-prev">
+						<a class="prev track" href="#track">Prev</a>
+						<hr />
+						<a class="next about" href="#about">Next</a>
+					</nav>
+				</article>
+				
+				<article id="about">
+					<header>
+						<h1>Inscripci&#243;n</h1>
+					</header>
+					<p>
+						Llenar el formulario es gratis, quedar&#225; inscrito hasta que se acerque a un punto autorizado a cancelar su inscripci&#243;n luego de llenar este formulario. <br><br>
+						El costo de inscripci&#243;n es el siguiente:<br>
+
+						• DH Junior Hombres: $20 / ¢10.000<br>
+						• DH Open Hombres: $20 / ¢10.000<br>
+						• DH Junior y Open Hombres: $30 / ¢15.000<br>
+						• DH Open Mujeres: $20 / ¢10.000<br>
+
+					</p>
+					<nav class="next-prev">
+						<a class="prev sponsors" href="#sponsors">Prev</a>
+					</nav>
+				</article>
+
+					<footer id="footer">&#169; INTRACK.TV | <a href="mailto:info@intrack.tv">info@intrack.tv</a> |  Dise&#241;o: <a href="http://re.vu/krapaus" target="_blank">Alejandro Delgado</a> | Desarrollo: <a href="http://re.vu/rsobrado" target="_blank">Roger Sobrado</a>
+				</footer>
+			</div>
+			
+			<!-- Parallax foreground -->
+			<div id="parallax-bg3">
+				<img id="bg3-1" src="img/logo.png" width="529" height="560" alt="Montgolfier hot air balloon"/>
+				
+				<div id="bg3-2">
+					<a title="Ver Mapa" id="mapa" onClick="openbox('Mapa', 1)"><img src="img/mapa-a.png" alt="mapa-a" /></a>
+					<img src="img/mapa-b.png" alt="mapa-b">
+				</div>
+
+				<div id="bg3-3">
+					<ul>
+						<li><img src="http://placehold.it/250x150"></li>
+						<li><img src="http://placehold.it/250x150"></li>
+						<li><img src="http://placehold.it/250x150"></li>
+					</ul>
+					<ul>
+						<li><img src="http://placehold.it/250x150"></li>
+						<li><img src="http://placehold.it/250x150"></li>
+						<li><img src="http://placehold.it/250x150"></li>
+					</ul>
+				</div>
+
+				<img id="bg3-4" src="img/ground.png" width="1104" height="684" alt="rider"/>
+				<div id="form">
+
+					<iframe id="JotFormIFrame" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="http://form.jotformpro.com/form/30071045874955" frameborder="0" style="width:100%; height:481px; border:none;" scrolling="no"></iframe>
+					<script type="text/javascript">window.handleIFrameMessage = function(e) {var args = e.data.split(":");var iframe = document.getElementById("JotFormIFrame");if (!iframe)return;switch (args[0]) {case "scrollIntoView":iframe.scrollIntoView();break;case "setHeight":iframe.style.height = args[1] + "px";break;}};if (window.addEventListener) {window.addEventListener("message", handleIFrameMessage, false);} else if (window.attachEvent) {window.attachEvent("onmessage", handleIFrameMessage);}</script>
+
+					<script type="text/javascript" src="http://form.jotformpro.com/jsform/30071045874955"></script>
+				</div>
+
+
+			</div>
+			
+			<!-- Parallax  midground clouds -->
+			<div id="parallax-bg2"> 
+				<img id="bg2-3" src="img/cloud-lg1.png" alt="cloud"/>
+				<img id="bg2-4" src="img/cloud-lg1.png" alt="cloud"/>
+				<img id="bg2-5" src="img/cloud-lg1.png" alt="cloud"/>
+			</div>
+			
+			<!-- Parallax  background clouds -->
+			<div id="parallax-bg1">
+				<img id="bg1-1" src="img/cloud-lg2.png" alt="cloud"/>
+				<img id="bg1-2" src="img/cloud-lg2.png" alt="cloud"/>
+				<img id="bg1-3" src="img/cloud-lg2.png" alt="cloud"/>
+				<img id="bg1-4" src="img/cloud-lg2.png" alt="cloud"/>
+			</div>
+		
+		</div>
+
+		<div id="shadowing"></div>
+		<div id="box">
+		  <span id="boxtitle">mapa</span>
+		  
+		  <iframe width="620" height="460" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msid=202281234127100889145.0004d1cf9df5e3cc14274&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;z=15&amp;ll=9.934678,-84.193478&amp;&amp;output=embed"></iframe><br />
+		  <small>Ver <a href="https://maps.google.com/maps/ms?msid=202281234127100889145.0004d1cf9df5e3cc14274&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=9.924678,-84.185478&amp;spn=0.020291,0.027466&amp;z=15&amp;source=embed" >Festival Downhill Santa Ana 2013 </a> en un mapa m&#225;s grande</small>
+			
+		      <input class="close" type="button" name="cancel" value="[x] Cerrar" onClick="closebox()">
+		</div>
+	
+	</body>
+  
+</html>
